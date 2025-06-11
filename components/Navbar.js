@@ -54,12 +54,12 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
+          {/* <a
             href="tel:+1234567890"
             className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
             <FaPhoneAlt className="inline mr-2" /> Call Us
-          </a>
+          </a> */}
         </nav>
 
         {/* Mobile menu button */}
@@ -88,12 +88,12 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
+          {/* <a
             href="tel:+1234567890"
             className="text-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
             <FaPhoneAlt className="inline mr-2" /> Call Us
-          </a>
+          </a> */}
         </div>
       </div>
     </header>

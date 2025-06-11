@@ -1,8 +1,6 @@
-// import { ChevronRight } from 'lucide-react';
+import { FaChevronRight , FaWhatsapp} from 'react-icons/fa';
 import { servicesData } from "@/helper/servicesData";
 import Link from "next/link";
-import { FaPhoneAlt, FaBars, FaChevronRight, FaQuoteLeft, FaStar, FaStarHalfAlt, FaMapMarkerAlt, FaEnvelope, FaClock, FaPaperPlane, FaPaintRoller, FaBath, FaDoorOpen, FaPaintBrush, FaProjectDiagram, FaLightbulb, FaTools, FaUsers, FaClipboardCheck, FaCheckCircle, FaArchway } from 'react-icons/fa';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 
 
@@ -10,40 +8,47 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/f
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-background">
-      
+    <div className="min-h-screen">
+
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center">
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <img
-            src="https://readdy.ai/api/search-image?query=construction%20services%20overview%2C%20multiple%20construction%20projects%20collage%2C%20residential%20and%20commercial%20buildings%2C%20professional%20construction%20photography%2C%20modern%20architecture&width=1440&height=400&seq=services-hero&orientation=landscape"
-            alt="Our Services"
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/30"></div>
-        </div>
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Our Services</h1>
-          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-            Comprehensive construction solutions tailored to meet your specific needs with exceptional quality and innovation.
-          </p>
+      <section
+        id="home"
+        className="hero-image flex items-center justify-center text-center pt-16 text-white"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/house.jpg)',
+          height: "40vh",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          position: "relative"
+        }}
+        data-aos="fade"
+      >
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
+            <p className="text-xl md:text-2xl mb-8 leading-relaxed">Comprehensive construction solutions tailored to meet your specific needs with exceptional quality and innovation.
+              .</p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20">
+      <section className="py-20 bg-slate-100 text-black">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Complete Construction Solutions</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">Complete Construction Solutions</h2>
+            <p className="max-w-2xl mx-auto">
               From residential homes to commercial complexes, we provide end-to-end construction services with a focus on quality, innovation, and client satisfaction.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {servicesData.map((service, index) => (
               <Link key={index} href={`/services/${index}`}>
-                <div className="overflow-hidden transition-transform hover:scale-105 cursor-pointer">
+                <div className="overflow-hidden shadow-xl transition-transform hover:scale-105 cursor-pointer">
                   <div className="h-64 overflow-hidden">
                     <img
                       src={service.image}
@@ -52,11 +57,11 @@ const Services = () => {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
+                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                     <p className="text-muted-foreground mb-4">{service.description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-primary font-medium">Learn more</span>
-                      {/* <ChevronRight className="w-4 h-4 text-primary" /> */}
+                      <FaChevronRight className="w-4 h-4 text-primary" />
                     </div>
                   </div>
                 </div>
@@ -75,7 +80,7 @@ const Services = () => {
               We follow a structured approach to ensure your project is completed on time, within budget, and to the highest standards.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -85,7 +90,7 @@ const Services = () => {
                 icon: "consultation"
               },
               {
-                step: "02", 
+                step: "02",
                 title: "Design & Planning",
                 description: "Detailed architectural plans and project timeline development.",
                 icon: "design"
@@ -136,8 +141,15 @@ const Services = () => {
           </div>
         </div>
       </section>
-
-      
+        {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/27123456789"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 cursor-pointer"
+      >
+        <FaWhatsapp className="text-3xl" />
+      </a>
     </div>
   );
 };

@@ -4,12 +4,12 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { FaPhoneAlt, FaBars, FaChevronRight, FaQuoteLeft, FaStar, FaStarHalfAlt, FaMapMarkerAlt, FaEnvelope, FaClock, FaPaperPlane, FaPaintRoller, FaBath, FaDoorOpen, FaPaintBrush, FaProjectDiagram, FaLightbulb, FaTools, FaUsers, FaClipboardCheck, FaCheckCircle, FaArchway } from 'react-icons/fa';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaChevronRight, FaQuoteLeft, FaStar, FaStarHalfAlt, FaPaintRoller, FaBath, FaDoorOpen, FaPaintBrush, FaProjectDiagram, FaLightbulb, FaTools, FaUsers, FaClipboardCheck, FaCheckCircle, FaArchway } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter , FaWhatsapp } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 const App = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -59,7 +59,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gray-50 font-sans">
+    <div className="bg-gray-50">
 
 
       {/* Hero Section */}
@@ -81,8 +81,8 @@ const App = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">The Art of Construction</h1>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed">Transform your space with style and precision. Our expert team is ready to bring your vision to life.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="#contact" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition duration-300" onClick={(e) => scrollToSection(e, '#contact')}>Get a Free Quote</a>
-              <a href="#services" className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 rounded-lg text-white font-semibold transition duration-300" onClick={(e) => scrollToSection(e, '#services')}>Our Services</a>
+              <Link href="/contact" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition duration-300">Get a Free Quote</Link>
+              <Link href="/services" className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 rounded-lg text-white font-semibold transition duration-300">Our Services</Link>
             </div>
           </div>
         </div>
@@ -138,25 +138,13 @@ const App = () => {
                   </div>
                 </div>
               </div>
-              <Link href="/contact" className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition duration-300" onClick={(e) => scrollToSection(e, '#contact')}>
+              <Link href="/about" className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition duration-300">
                 Learn More About Us
               </Link>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-gray-50">
@@ -222,7 +210,7 @@ const App = () => {
             {/* Service 4 */}
             <div className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" data-aos="fade-up">
               <div className="h-48 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1600450552764-25a60610116b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Handmade door" className="w-full h-full object-cover" />
+                <img src="/images/house.jpg" alt="Handmade door" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
@@ -256,7 +244,7 @@ const App = () => {
             {/* Service 6 */}
             <div className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
               <div className="h-48 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1581093318105-ad3d3f4d3b52?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Construction planning" className="w-full h-full object-cover" />
+                <img src="/images/house1.webp" alt="Construction planning" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
@@ -272,15 +260,6 @@ const App = () => {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
 
       {/* Stats Section */}
       <section className="py-16 bg-blue-600 text-white">
@@ -338,7 +317,7 @@ const App = () => {
 
             {/* Project 3 */}
             <div className="project-item rounded-lg overflow-hidden shadow-lg relative group" data-aos="fade-up" data-aos-delay="200">
-              <img src="https://images.unsplash.com/photo-1557128928-a3859a78f355?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Office space" className="w-full h-64 object-cover" />
+              <img src="/images/house2.webp" alt="Office space" className="w-full h-64 object-cover" />
               <div className="project-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-5">
                 <h3 className="text-xl font-bold mb-2">Commercial Office</h3>
                 <p className="mb-4">Complete office space construction with custom lighting solutions</p>
@@ -368,7 +347,7 @@ const App = () => {
 
             {/* Project 6 */}
             <div className="project-item rounded-lg overflow-hidden shadow-lg relative group" data-aos="fade-up" data-aos-delay="200">
-              <img src="https://images.unsplash.com/photo-1560611925-e7f6a5a1b8b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Exterior renovation" className="w-full h-64 object-cover" />
+              <img src="/images/house3.jpeg" alt="Exterior renovation" className="w-full h-64 object-cover" />
               <div className="project-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-5">
                 <h3 className="text-xl font-bold mb-2">Residential Exterior</h3>
                 <p className="mb-4">Complete exterior renovation with new facade and landscaping</p>
@@ -475,7 +454,7 @@ const App = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             <div className="lg:w-1/2" data-aos="fade-left">
-              <img src="https://images.unsplash.com/photo-1581093057305-5f5235ee50e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Construction team working" className="rounded-lg shadow-xl w-full h-auto" />
+              <img src='/images/house14.jpg' alt="Construction team working" className="rounded-lg shadow-xl w-full h-auto" />
             </div>
             <div className="lg:w-1/2" data-aos="fade-right">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Mission & Values</h2>
@@ -507,7 +486,7 @@ const App = () => {
                   </li>
                 </ul>
               </div>
-              <Link href="/contact" className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition duration-300" onClick={(e) => scrollToSection(e, '#contact')}>
+              <Link href="/contact" className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition duration-300">
                 Get in Touch
               </Link>
             </div>
@@ -590,42 +569,24 @@ const App = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Start Your Project?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Whether you have a small renovation or a major construction project, we're here to help bring your vision to life.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
-            <Link href="/contact" className="px-8 py-3 bg-white hover:bg-gray-100 rounded-lg text-blue-600 font-semibold transition duration-300" onClick={(e) => scrollToSection(e, '#contact')}>
+            <Link href="/contact" className="px-8 py-3 bg-white hover:bg-gray-100 rounded-lg text-blue-600 font-semibold transition duration-300">
               Get a Free Quote
             </Link>
-            <Link href="tel:+1234567890" className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 rounded-lg text-white font-semibold transition duration-300">
-              <FaPhoneAlt className="inline mr-2" /> Call Us Now
+            <Link href="/projects" className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 rounded-lg text-white font-semibold transition duration-300">
+              View our projects
             </Link>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/27123456789"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 cursor-pointer"
+      >
+        <FaWhatsapp className="text-3xl" />
+      </a>
     </div>
   );
 };

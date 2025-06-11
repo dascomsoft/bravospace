@@ -4,6 +4,10 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
+
+
+
 
 const About = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -683,93 +687,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white pt-16 pb-8">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">
-                <span className="text-blue-400">Bravo</span>space 294
-              </h3>
-              <p className="text-gray-400 mb-6">Transforming spaces with precision, quality, and innovation since 2010.</p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                  <i className="fab fa-facebook-f text-lg"></i>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                  <i className="fab fa-twitter text-lg"></i>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                  <i className="fab fa-instagram text-lg"></i>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                  <i className="fab fa-linkedin-in text-lg"></i>
-                </a>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
-              <ul className="space-y-3">
-                <li><a href="https://readdy.ai/home/4036c8c6-2333-41f5-844c-9121096f2f54/19e692e7-4fb2-49b8-88d4-50079d56c405" data-readdy="true" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Home</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">About Us</a></li>
-                <li><a href="https://readdy.ai/home/4036c8c6-2333-41f5-844c-9121096f2f54/934d0531-d521-4a3b-8be7-0264046ff368" data-readdy="true" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Services</a></li>
-                <li><a href="https://readdy.ai/home/4036c8c6-2333-41f5-844c-9121096f2f54/552de63d-044c-4c3a-843b-25292fb91c20" data-readdy="true" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Projects</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-6">Services</h4>
-              <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Residential Construction</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Commercial Construction</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Renovation & Remodeling</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Interior Design</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Project Management</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <i className="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
-                  <span className="text-gray-400">123 Construction Ave, Johannesburg, South Africa</span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-phone-alt text-blue-400 mr-3"></i>
-                  <span className="text-gray-400">+27 12 345 6789</span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-envelope text-blue-400 mr-3"></i>
-                  <span className="text-gray-400">info@bravospace294.com</span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-clock text-blue-400 mr-3"></i>
-                  <span className="text-gray-400">Mon-Fri: 8AM - 6PM</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Bravospace 294. All rights reserved.</p>
-              <div className="flex space-x-6">
-                <a href="#" className="text-gray-500 hover:text-gray-400 text-sm cursor-pointer">Privacy Policy</a>
-                <a href="#" className="text-gray-500 hover:text-gray-400 text-sm cursor-pointer">Terms of Service</a>
-                <a href="#" className="text-gray-500 hover:text-gray-400 text-sm cursor-pointer">Sitemap</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
 
-      {/* WhatsApp Floating Button */}
-      <a
+       <a
         href="https://wa.me/27123456789"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 cursor-pointer"
       >
-        <i className="fab fa-whatsapp text-2xl"></i>
+        <FaWhatsapp className="text-3xl" />
       </a>
     </div>
   );

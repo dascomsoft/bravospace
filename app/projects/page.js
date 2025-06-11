@@ -3,8 +3,7 @@
 
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import React, { useState, useEffect } from 'react';
-import { GrProjects } from 'react-icons/gr';
-
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Projects = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -325,25 +324,6 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-            {/* WhatsApp Floating Button */}
-            <a
-                href="https://wa.me/27123456789"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 cursor-pointer"
-            >
-                <i className="fab fa-whatsapp text-2xl"></i>
-            </a>
         </div>
     );
 };
@@ -394,6 +374,15 @@ const ProjectCard = ({ project, viewMode }) => {
                     </div>
                 </div>
             </div>
+              {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/27123456789"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 cursor-pointer"
+      >
+        <FaWhatsapp className="text-3xl" />
+      </a>
         </div>
     );
 };

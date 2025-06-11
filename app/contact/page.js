@@ -19,14 +19,13 @@ const Contact = () => {
         <div>
 
             {/* Contact Section */}
-            <section id="contact" className="py-20 bg-white">
+            <section id="contact" className="pt-40 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16" data-aos="fade-up">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
                         <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
                         <p className="text-gray-600 max-w-2xl mx-auto">We'd love to hear about your project. Get in touch with us using the form below or contact us directly.</p>
                     </div>
-
                     <div className="flex flex-col lg:flex-row gap-12">
                         <div className="lg:w-1/2" data-aos="fade-right">
                             <form className="space-y-6" onSubmit={handleSubmit}>
