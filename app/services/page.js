@@ -1,6 +1,7 @@
 import { FaChevronRight, FaWhatsapp } from 'react-icons/fa';
 import { servicesData } from "@/helper/servicesData";
 import Link from "next/link";
+import Image from 'next/image';
 
 
 
@@ -50,7 +51,7 @@ const Services = () => {
               <Link key={index} href={`/services/${index}`}>
                 <div className="overflow-hidden shadow-xl transition-transform hover:scale-105 cursor-pointer">
                   <div className="h-64 overflow-hidden">
-                    <img
+                    <Image
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover transition-transform hover:scale-110"
@@ -128,7 +129,7 @@ const Services = () => {
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Start Your Project?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Whether you have a small renovation or a major construction project, we're here to help bring your vision to life.</p>
+          <p className="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Whether you have a small renovation or a major construction project, we are here to help bring your vision to life.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
             <Link href="/contact" className="px-8 py-3 bg-white hover:bg-gray-100 rounded-lg text-blue-600 font-semibold transition duration-300">
               Get a Free Quote

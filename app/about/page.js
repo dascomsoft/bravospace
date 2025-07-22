@@ -5,6 +5,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import Image from 'next/image';
 
 
 
@@ -31,7 +32,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <Image
             src="https://readdy.ai/api/search-image?query=modern%20architecture%20office%20building%20with%20team%20of%20diverse%20professionals%20in%20collaborative%20workspace%2C%20soft%20natural%20lighting%20streaming%20through%20large%20windows%2C%20elegant%20interior%20design%20with%20plants%20and%20wooden%20elements%2C%20professional%20corporate%20photography%20with%20neutral%20gradient%20background&width=1440&height=600&seq=hero-about&orientation=landscape" 
             alt="About Bravospace 294" 
             className="w-full h-full object-cover object-top"
@@ -52,7 +53,7 @@ const About = () => {
           <div className="flex flex-col items-start max-w-2xl">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Building Excellence Since 2010</h1>
             <p className="text-xl text-gray-700 mb-8">
-              We're more than just a construction company. We're a team of passionate builders, designers, and problem-solvers dedicated to transforming spaces and creating lasting value for our clients.
+              We are more than just a construction company. We are a team of passionate builders, designers, and problem-solvers dedicated to transforming spaces and creating lasting value for our clients.
             </p>
             <div className="flex space-x-4">
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer">
@@ -74,14 +75,14 @@ const About = () => {
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8">
                 <p className="text-xl font-medium text-gray-800">
-                  "To create exceptional spaces that inspire, endure, and exceed expectations through innovation, quality craftsmanship, and unwavering integrity."
+                  To create exceptional spaces that inspire, endure, and exceed expectations through innovation, quality craftsmanship, and unwavering integrity.
                 </p>
               </div>
               <p className="text-gray-600 mb-6">
                 Founded in 2010, Bravospace 294 began as a small residential construction company with a big vision. Our founder, Michael Ndlovu, started with just three employees and a commitment to quality that remains our cornerstone today.
               </p>
               <p className="text-gray-600 mb-6">
-                Over the years, we've grown into one of Johannesburg's most respected construction firms, expanding our services to include commercial construction, renovations, and specialized design-build projects. Through economic ups and downs, we've maintained our commitment to excellence, building not just structures but lasting relationships with our clients.
+                Over the years, we have grown into one of Johannesburg most respected construction firms, expanding our services to include commercial construction, renovations, and specialized design-build projects. Through economic ups and downs, we have maintained our commitment to excellence, building not just structures but lasting relationships with our clients.
               </p>
               <p className="text-gray-600">
                 Today, with over 150 projects completed and a team of 75 dedicated professionals, we continue to push boundaries and set new standards in the construction industry across South Africa.
@@ -115,7 +116,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Journey</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              From humble beginnings to industry leadership, explore the key milestones that have shaped our company's growth and success over the years.
+              From humble beginnings to industry leadership, explore the key milestones that have shaped our company growth and success over the years.
             </p>
           </div>
 
@@ -245,7 +246,7 @@ const About = () => {
             {/* Team Member 1 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img 
+                <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20confident%20African%20male%20executive%20in%20business%20suit%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2040%20years%20old&width=400&height=500&seq=team1&orientation=portrait" 
                   alt="Michael Ndlovu" 
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
@@ -274,7 +275,7 @@ const About = () => {
             {/* Team Member 2 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img 
+                <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20female%20architect%20in%20business%20casual%20attire%2C%20mixed%20race%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2035%20years%20old&width=400&height=500&seq=team2&orientation=portrait" 
                   alt="Sarah Johnson" 
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
@@ -303,7 +304,7 @@ const About = () => {
             {/* Team Member 3 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img 
+                <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20Indian%20male%20executive%20in%20business%20casual%20attire%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2045%20years%20old&width=400&height=500&seq=team3&orientation=portrait" 
                   alt="Rajiv Patel" 
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
@@ -332,7 +333,7 @@ const About = () => {
             {/* Team Member 4 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img 
+                <Image
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20blonde%20female%20executive%20in%20business%20attire%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2038%20years%20old&width=400&height=500&seq=team4&orientation=portrait" 
                   alt="Emma Wilson" 
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
@@ -361,7 +362,7 @@ const About = () => {
             {/* Team Member 5 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img 
+                <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20African%20male%20executive%20in%20business%20casual%20attire%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2042%20years%20old&width=400&height=500&seq=team5&orientation=portrait" 
                   alt="David Mokoena" 
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
@@ -390,7 +391,7 @@ const About = () => {
             {/* Team Member 6 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img 
+                <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20Asian%20female%20executive%20in%20business%20attire%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2036%20years%20old&width=400&height=500&seq=team6&orientation=portrait" 
                   alt="Grace Chen" 
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
@@ -505,7 +506,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what our clients have to say about their experience working with Bravospace 294.
+              Do not just take our word for it. Here is what our clients have to say about their experience working with Bravospace 294.
             </p>
           </div>
 
@@ -523,10 +524,10 @@ const About = () => {
                 <span className="text-gray-600">5.0</span>
               </div>
               <p className="text-gray-700 italic mb-6">
-                "Working with Bravospace 294 was a dream. From the initial design consultation to the final walkthrough, they were professional, responsive, and delivered exceptional quality. Our new office has transformed how we work."
+                Working with Bravospace 294 was a dream. From the initial design consultation to the final walkthrough, they were professional, responsive, and delivered exceptional quality. Our new office has transformed how we work.
               </p>
               <div className="flex items-center">
-                <img 
+                <Image
                   src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20business%20executive%2C%20neutral%20background%2C%20corporate%20portrait%2C%2045%20year%20old%20male&width=60&height=60&seq=client1&orientation=squarish" 
                   alt="Robert Khumalo" 
                   className="w-12 h-12 rounded-full object-cover mr-4"
@@ -551,10 +552,10 @@ const About = () => {
                 <span className="text-gray-600">5.0</span>
               </div>
               <p className="text-gray-700 italic mb-6">
-                "The team at Bravospace 294 turned our renovation project into a masterpiece. They understood our vision perfectly and executed it with precision. Their attention to detail is unmatched."
+                The team at Bravospace 294 turned our renovation project into a masterpiece. They understood our vision perfectly and executed it with precision. Their attention to detail is unmatched.
               </p>
               <div className="flex items-center">
-                <img 
+                <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20business%20woman%2C%20neutral%20background%2C%20corporate%20portrait%2C%2038%20year%20old%20female&width=60&height=60&seq=client2&orientation=squarish" 
                   alt="Jennifer Smith" 
                   className="w-12 h-12 rounded-full object-cover mr-4"
@@ -579,10 +580,10 @@ const About = () => {
                 <span className="text-gray-600">4.5</span>
               </div>
               <p className="text-gray-700 italic mb-6">
-                "As a developer, I've worked with many construction firms, but Bravospace 294 stands out. Their commitment to quality, timeline adherence, and budget management is exceptional. They're now our go-to partner."
+                As a developer, I have worked with many construction firms, but Bravospace 294 stands out. Their commitment to quality, timeline adherence, and budget management is exceptional. They are now our go-to partner.
               </p>
               <div className="flex items-center">
-                <img 
+                <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20real%20estate%20developer%2C%20neutral%20background%2C%20corporate%20portrait%2C%2050%20year%20old%20male&width=60&height=60&seq=client3&orientation=squarish" 
                   alt="Daniel van der Merwe" 
                   className="w-12 h-12 rounded-full object-cover mr-4"
@@ -675,7 +676,7 @@ const About = () => {
       <section className="py-20 bg-blue-600 text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Construction Project?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">Contact us today for a free consultation and quote. Let's bring your vision to life with Bravospace 294.</p>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">Contact us today for a free consultation and quote. Let bring your vision to life with Bravospace 294.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition-colors text-lg font-medium !rounded-button whitespace-nowrap cursor-pointer">
               Get a Free Quote

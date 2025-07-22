@@ -3,6 +3,10 @@
 import { servicesData } from '@/helper/servicesData';
 import Link from 'next/link';
 import { FaChevronRight } from 'react-icons/fa';
+import Image from 'next/image';
+
+
+
 
 export default function Page({ params }) {
   // Vérification que params.id existe
@@ -55,7 +59,7 @@ export default function Page({ params }) {
 
       <div className="bg-white rounded-lg shadow-md overflow-hidden">
         <div className="h-64 w-full overflow-hidden">
-          <img
+          <Image
             src={service.image}
             alt={service.title}
             className="w-full h-full object-cover"

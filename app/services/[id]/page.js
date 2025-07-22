@@ -6,6 +6,7 @@
 import { servicesData } from '@/helper/servicesData';
 import Link from 'next/link';
 import { use } from 'react';
+import Image from 'next/image';
 
 
 export default function ServiceDetail({ params }) {
@@ -57,7 +58,7 @@ export default function ServiceDetail({ params }) {
             {/* Hero section */}
             <section className="relative h-96 flex items-center">
                 <div className="absolute inset-0 z-0">
-                    <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                    <Image src={service.image} alt={service.title} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/30" />
                 </div>
                 <div className="container mx-auto px-6  relative z-10 px-6 text-white">

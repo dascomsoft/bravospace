@@ -12,6 +12,7 @@ import react from 'react';
 // import WhatsAppButton from '@/components/WhatsAppButton';
 import Link from 'next/link';
 import { projectsData } from "@/helper/projectsData";
+import Image from 'next/image';
 
 
 
@@ -61,7 +62,7 @@ const Projects = () => {
             {/* Hero Section */}
             <section className="relative h-96 flex items-center">
                 <div className="absolute inset-0 z-0 overflow-hidden">
-                    <img
+                    <Image
                         src="https://readdy.ai/api/search-image?query=portfolio%20of%20construction%20projects%2C%20multiple%20completed%20buildings%20showcase%2C%20modern%20residential%20and%20commercial%20architecture%2C%20professional%20portfolio%20photography&width=1440&height=400&seq=projects-hero&orientation=landscape"
                         alt="Our Projects"
                         className="w-full h-full object-cover object-center"
@@ -106,7 +107,7 @@ const Projects = () => {
                                 <Link key={index} href={`/projects/${originalIndex}`}>
                                     <div className="bg-card text-card-foreground rounded-lg shadow-xl transition-all hover:shadow-xl cursor-pointer">
                                         <div className="h-64 overflow-hidden">
-                                            <img
+                                            <Image
                                                 src={project.image}
                                                 alt={project.title}
                                                 className="w-full h-full object-cover transition-transform hover:scale-110"
@@ -164,7 +165,7 @@ const Projects = () => {
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Start Your Project?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Whether you have a small renovation or a major construction project, we're here to help bring your vision to life.</p>
+          <p className="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Whether you have a small renovation or a major construction project, we are here to help bring your vision to life.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
             <Link href="/contact" className="px-8 py-3 bg-white hover:bg-gray-100 rounded-lg text-blue-600 font-semibold transition duration-300">
               Get a Free Quote

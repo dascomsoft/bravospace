@@ -4,7 +4,7 @@
 import { projectsData } from '@/helper/projectsData';
 import Link from 'next/link';
 import { use } from 'react';
-
+import Image from 'next/image';
 
 
  
@@ -103,7 +103,7 @@ const ProjectDetail = ({ params }) => {
       {/* Hero Section */}
       <section className="relative h-96 flex items-center">
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <img
+          <Image
             src={project.image}
             alt={project.title}
             className="w-full h-full object-cover object-center"
@@ -221,7 +221,7 @@ const ProjectDetail = ({ params }) => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-4">Start Your Project</h3>
                   <p className="text-muted-foreground mb-6">
-                    Inspired by this project? Let's discuss how we can bring your vision to life.
+                    Inspired by this project? Let us discuss how we can bring your vision to life.
                   </p>
                   <div className="space-y-3">
                     <Link href="/contact">
@@ -255,7 +255,7 @@ const ProjectDetail = ({ params }) => {
                 return (
                   <div key={index} className="bg-card text-card-foreground rounded-lg border shadow-sm overflow-hidden transition-all hover:shadow-xl">
                     <div className="h-48 overflow-hidden">
-                      <img
+                      <Image
                         src={relatedProject.image}
                         alt={relatedProject.title}
                         className="w-full h-full object-cover transition-transform hover:scale-110"
