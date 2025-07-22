@@ -9,6 +9,15 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter , FaWhatsapp } from '
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
+import { servicesData } from '@/helper/servicesData';
+import { projectsData } from '@/helper/projectsData';
+
+
+
+
+
+
+
 
 
 const App = () => {
@@ -146,17 +155,61 @@ const App = () => {
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
+
+
+<section id="services" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Specialized Services</h2>
+          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of construction services to meet all your residential and commercial needs.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {servicesData.map((service, index) => (
+            <div 
+              key={service.id}
+              className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" 
+              data-aos="fade-up" 
+              data-aos-delay={index * 100}
+            >
+              <div className="h-48 overflow-hidden">
+                <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6">
+                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <service.icon className="text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
+                <p className="text-gray-600 mb-4">{service.description}</p>
+                <Link  key={index} href={`/services/${index}`} className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
+                  Learn more <FaChevronRight className="ml-1 text-sm" />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+      
+      {/* <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16" data-aos="fade-up">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Specialized Services</h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of construction services to meet all your residential and commercial needs.</p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
             <div className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" data-aos="fade-up">
               <div className="h-48 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ceiling design" className="w-full h-full object-cover" />
@@ -173,7 +226,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Service 2 */}
             <div className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
               <div className="h-48 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bathroom tiling" className="w-full h-full object-cover" />
@@ -190,7 +242,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Service 3 */}
             <div className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
               <div className="h-48 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Interior painting" className="w-full h-full object-cover" />
@@ -207,7 +258,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Service 4 */}
             <div className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" data-aos="fade-up">
               <div className="h-48 overflow-hidden">
                 <img src="/images/house.jpg" alt="Handmade door" className="w-full h-full object-cover" />
@@ -224,7 +274,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Service 5 */}
             <div className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
               <div className="h-48 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Rhinolite application" className="w-full h-full object-cover" />
@@ -241,7 +290,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Service 6 */}
             <div className="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:-translate-y-2.5 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
               <div className="h-48 overflow-hidden">
                 <img src="/images/house1.webp" alt="Construction planning" className="w-full h-full object-cover" />
@@ -259,7 +307,14 @@ const App = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+
+
+
+
+
 
       {/* Stats Section */}
       <section className="py-16 bg-blue-600 text-white">
@@ -285,7 +340,92 @@ const App = () => {
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* Projects Section */}
+
+
+
+
+
+
+
+
+           {/* Featured Projects */}
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Featured Projects</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Explore our portfolio of exceptional construction projects that showcase our commitment to quality and innovation.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projectsData.map((project, index) => (
+              <Link key={index} href={`/projects/${index}`}>
+                <div className="bg-card text-card-foreground rounded-lg border shadow-sm overflow-hidden transition-all hover:shadow-xl cursor-pointer">
+                  <div className="h-64 overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-3">
+                      <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
+                      <span className="bg-primary/10 text-primary text-xs font-medium px-2.5 py-1 rounded">{project.category}</span>
+                    </div>
+                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center">
+                        <svg className="w-4 h-4 text-muted-foreground mr-2" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-muted-foreground text-sm">{project.location}</span>
+                      </div>
+                      <div className="flex items-center text-primary">
+                        <span className="font-medium mr-1">View Project</span>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          </div>
+          </section>
+
+
+
+
+
+
+
+{/* 
       <section id="projects" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16" data-aos="fade-up">
@@ -295,7 +435,6 @@ const App = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Project 1 */}
             <div className="project-item rounded-lg overflow-hidden shadow-lg relative group" data-aos="fade-up">
               <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern living room" className="w-full h-64 object-cover" />
               <div className="project-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-5">
@@ -305,7 +444,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Project 2 */}
             <div className="project-item rounded-lg overflow-hidden shadow-lg relative group" data-aos="fade-up" data-aos-delay="100">
               <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bathroom renovation" className="w-full h-64 object-cover" />
               <div className="project-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-5">
@@ -315,7 +453,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Project 3 */}
             <div className="project-item rounded-lg overflow-hidden shadow-lg relative group" data-aos="fade-up" data-aos-delay="200">
               <img src="/images/house2.webp" alt="Office space" className="w-full h-64 object-cover" />
               <div className="project-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-5">
@@ -325,7 +462,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Project 4 */}
             <div className="project-item rounded-lg overflow-hidden shadow-lg relative group" data-aos="fade-up">
               <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kitchen renovation" className="w-full h-64 object-cover" />
               <div className="project-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-5">
@@ -335,7 +471,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Project 5 */}
             <div className="project-item rounded-lg overflow-hidden shadow-lg relative group" data-aos="fade-up" data-aos-delay="100">
               <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Restaurant construction" className="w-full h-64 object-cover" />
               <div className="project-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-5">
@@ -345,7 +480,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* Project 6 */}
             <div className="project-item rounded-lg overflow-hidden shadow-lg relative group" data-aos="fade-up" data-aos-delay="200">
               <img src="/images/house3.jpeg" alt="Exterior renovation" className="w-full h-64 object-cover" />
               <div className="project-overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-5">
@@ -362,7 +496,22 @@ const App = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section>  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50">

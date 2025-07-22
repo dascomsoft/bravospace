@@ -1,4 +1,4 @@
-import { FaChevronRight , FaWhatsapp} from 'react-icons/fa';
+import { FaChevronRight, FaWhatsapp } from 'react-icons/fa';
 import { servicesData } from "@/helper/servicesData";
 import Link from "next/link";
 
@@ -71,6 +71,9 @@ const Services = () => {
         </div>
       </section>
 
+
+
+
       {/* Service Process */}
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-6">
@@ -108,8 +111,8 @@ const Services = () => {
                 icon: "completion"
               }
             ].map((process, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div key={index} className="text-center shadow-xl p-3">
+                <div className="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {process.step}
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{process.title}</h3>
@@ -121,27 +124,22 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let's discuss your construction needs and create something amazing together.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/contact">
-              {/* <Link variant="secondary" size="lg" className="w-full sm:w-auto">
-                Get a Free Quote
-              </Link> */}
+        {/* CTA Section */}
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Start Your Project?</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Whether you have a small renovation or a major construction project, we're here to help bring your vision to life.</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+            <Link href="/contact" className="px-8 py-3 bg-white hover:bg-gray-100 rounded-lg text-blue-600 font-semibold transition duration-300">
+              Get a Free Quote
             </Link>
-            <Link href="/projects">
-              {/* <Link variant="outline" size="lg" className="w-full sm:w-auto bg-transparent border-white text-white hover:bg-white/10">
-                View Our Work
-              </Link> */}
+            <Link href="/projects" className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 rounded-lg text-white font-semibold transition duration-300">
+              View our projects
             </Link>
           </div>
         </div>
       </section>
-        {/* WhatsApp Floating Button */}
+      {/* WhatsApp Floating Button */}
       <a
         href="https://wa.me/27123456789"
         target="_blank"
