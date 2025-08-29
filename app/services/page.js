@@ -54,6 +54,7 @@ const Services = () => {
                     <Image
                       src={service.image}
                       alt={service.title}
+                      width={1350}  height={900}
                       className="w-full h-full object-cover transition-transform hover:scale-110"
                     />
                   </div>

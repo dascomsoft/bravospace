@@ -102,7 +102,8 @@ const App = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2" data-aos="fade-right">
-              <Image src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Construction team" className="rounded-lg shadow-xl w-full h-auto" />
+<Image src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Construction team" width={1350}  height={900}  className="rounded-lg shadow-xl w-full h-auto"
+/>
             </div>
             <div className="lg:w-1/2" data-aos="fade-left">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Building Spaces You will Love</h2>
@@ -175,7 +176,7 @@ const App = () => {
               data-aos-delay={index * 100}
             >
               <div className="h-48 overflow-hidden">
-                <Image src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                <Image src={service.image} alt={service.title} width={1350}  height={900} className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
@@ -233,6 +234,7 @@ const App = () => {
                     <Image
                       src={project.image}
                       alt={project.title}
+                      width={1350}  height={900}
                       className="w-full h-full object-cover transition-transform hover:scale-110"
                     />
                   </div>
@@ -278,7 +280,7 @@ const App = () => {
             <div className="testimonial-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:scale-103" data-aos="fade-up">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 rounded-full overflow-hidden">
-                  <Image src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client portrait" className="w-full h-full object-cover" />
+                  <Image src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client portrait"  width={1350}  height={900} className="w-full h-full object-cover" />
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800">Sarah Johnson</h4>
@@ -302,7 +304,7 @@ const App = () => {
             <div className="testimonial-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:scale-103" data-aos="fade-up" data-aos-delay="100">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 rounded-full overflow-hidden">
-                  <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client portrait" className="w-full h-full object-cover" />
+                  <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client portrait" width={1350}  height={900} className="w-full h-full object-cover" />
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800">David Muller</h4>
@@ -326,7 +328,7 @@ const App = () => {
             <div className="testimonial-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:scale-103" data-aos="fade-up" data-aos-delay="200">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 rounded-full overflow-hidden">
-                  <Image src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client portrait" className="w-full h-full object-cover" />
+                  <Image src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client portrait" width={1350}  height={900} className="w-full h-full object-cover" />
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800">Nombuso Dlamini</h4>
@@ -354,7 +356,7 @@ const App = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             <div className="lg:w-1/2" data-aos="fade-left">
-              <Image src='/images/house14.jpg' alt="Construction team working" className="rounded-lg shadow-xl w-full h-auto" />
+              <Image src='/images/house14.jpg' alt="Construction team working" width={1350}  height={900} className="rounded-lg shadow-xl w-full h-auto" />
             </div>
             <div className="lg:w-1/2" data-aos="fade-right">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Mission & Values</h2>
@@ -399,7 +401,7 @@ const App = () => {
               {/* Team Member 1 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
                 <div className="h-64 overflow-hidden">
-                  <Image src="https://randomuser.me/api/portraits/men/41.jpg" alt="Team member" className="w-full h-full object-cover" />
+                  <Image src="https://randomuser.me/api/portraits/men/41.jpg" alt="Team member" width={1350}  height={900} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-1">Michael Baloyi</h3>
@@ -415,7 +417,7 @@ const App = () => {
               {/* Team Member 2 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                 <div className="h-64 overflow-hidden">
-                  <Image src="https://randomuser.me/api/portraits/women/34.jpg" alt="Team member" className="w-full h-full object-cover" />
+                  <Image src="https://randomuser.me/api/portraits/women/34.jpg" alt="Team member" width={1350}  height={900} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-1">Nomvula Khumalo</h3>
@@ -431,7 +433,7 @@ const App = () => {
               {/* Team Member 3 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                 <div className="h-64 overflow-hidden">
-                  <Image src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team member" className="w-full h-full object-cover" />
+                  <Image src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team member" width={1350}  height={900} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-1">Jabulani Mokoena</h3>
@@ -446,7 +448,7 @@ const App = () => {
               {/* Team Member 4 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                 <div className="h-64 overflow-hidden">
-                  <Image src="https://randomuser.me/api/portraits/women/47.jpg" alt="Team member" className="w-full h-full object-cover" />
+                  <Image src="https://randomuser.me/api/portraits/women/47.jpg" alt="Team member" width={1350}  height={900} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-1">Thandiwe Ndlovu</h3>

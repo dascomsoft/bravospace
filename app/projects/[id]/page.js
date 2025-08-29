@@ -106,6 +106,7 @@ const ProjectDetail = ({ params }) => {
           <Image
             src={project.image}
             alt={project.title}
+            width={1350}  height={900}
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/30"></div>
@@ -258,6 +259,7 @@ const ProjectDetail = ({ params }) => {
                       <Image
                         src={relatedProject.image}
                         alt={relatedProject.title}
+                        width={1350}  height={900}
                         className="w-full h-full object-cover transition-transform hover:scale-110"
                       />
                     </div>

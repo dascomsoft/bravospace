@@ -65,6 +65,7 @@ const Projects = () => {
                     <Image
                         src="https://readdy.ai/api/search-image?query=portfolio%20of%20construction%20projects%2C%20multiple%20completed%20buildings%20showcase%2C%20modern%20residential%20and%20commercial%20architecture%2C%20professional%20portfolio%20photography&width=1440&height=400&seq=projects-hero&orientation=landscape"
                         alt="Our Projects"
+                        width={1350}  height={900}
                         className="w-full h-full object-cover object-center"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/30"></div>
@@ -110,6 +111,7 @@ const Projects = () => {
                                             <Image
                                                 src={project.image}
                                                 alt={project.title}
+                                                width={1350}  height={900}
                                                 className="w-full h-full object-cover transition-transform hover:scale-110"
                                             />
                                         </div>

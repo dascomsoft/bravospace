@@ -35,6 +35,7 @@ const About = () => {
           <Image
             src="https://readdy.ai/api/search-image?query=modern%20architecture%20office%20building%20with%20team%20of%20diverse%20professionals%20in%20collaborative%20workspace%2C%20soft%20natural%20lighting%20streaming%20through%20large%20windows%2C%20elegant%20interior%20design%20with%20plants%20and%20wooden%20elements%2C%20professional%20corporate%20photography%20with%20neutral%20gradient%20background&width=1440&height=600&seq=hero-about&orientation=landscape" 
             alt="About Bravospace 294" 
+            width={1350}  height={900}
             className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
@@ -249,6 +250,7 @@ const About = () => {
                 <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20confident%20African%20male%20executive%20in%20business%20suit%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2040%20years%20old&width=400&height=500&seq=team1&orientation=portrait" 
                   alt="Michael Ndlovu" 
+                  width={1350}  height={900}
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
                 />
               </div>
@@ -278,6 +280,7 @@ const About = () => {
                 <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20female%20architect%20in%20business%20casual%20attire%2C%20mixed%20race%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2035%20years%20old&width=400&height=500&seq=team2&orientation=portrait" 
                   alt="Sarah Johnson" 
+                  width={1350}  height={900}
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
                 />
               </div>
@@ -307,6 +310,7 @@ const About = () => {
                 <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20Indian%20male%20executive%20in%20business%20casual%20attire%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2045%20years%20old&width=400&height=500&seq=team3&orientation=portrait" 
                   alt="Rajiv Patel" 
+                  width={1350}  height={900}
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
                 />
               </div>
@@ -336,6 +340,7 @@ const About = () => {
                 <Image
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20blonde%20female%20executive%20in%20business%20attire%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2038%20years%20old&width=400&height=500&seq=team4&orientation=portrait" 
                   alt="Emma Wilson" 
+                  width={1350}  height={900}
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
                 />
               </div>
@@ -365,6 +370,7 @@ const About = () => {
                 <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20African%20male%20executive%20in%20business%20casual%20attire%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2042%20years%20old&width=400&height=500&seq=team5&orientation=portrait" 
                   alt="David Mokoena" 
+                  width={1350}  height={900}
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
                 />
               </div>
@@ -394,6 +400,7 @@ const About = () => {
                 <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20Asian%20female%20executive%20in%20business%20attire%2C%20architectural%20office%20background%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20with%20neutral%20background%2C%2036%20years%20old&width=400&height=500&seq=team6&orientation=portrait" 
                   alt="Grace Chen" 
+                  width={1350}  height={900}
                   className="w-full h-full object-cover object-top transition-transform group-hover:scale-105"
                 />
               </div>
@@ -530,6 +537,7 @@ const About = () => {
                 <Image
                   src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20business%20executive%2C%20neutral%20background%2C%20corporate%20portrait%2C%2045%20year%20old%20male&width=60&height=60&seq=client1&orientation=squarish" 
                   alt="Robert Khumalo" 
+                  width={1350}  height={900}
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
@@ -558,6 +566,7 @@ const About = () => {
                 <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20business%20woman%2C%20neutral%20background%2C%20corporate%20portrait%2C%2038%20year%20old%20female&width=60&height=60&seq=client2&orientation=squarish" 
                   alt="Jennifer Smith" 
+                width={1350}  height={900}
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
@@ -586,6 +595,7 @@ const About = () => {
                 <Image 
                   src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20real%20estate%20developer%2C%20neutral%20background%2C%20corporate%20portrait%2C%2050%20year%20old%20male&width=60&height=60&seq=client3&orientation=squarish" 
                   alt="Daniel van der Merwe" 
+                  width={1350}  height={900}
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
